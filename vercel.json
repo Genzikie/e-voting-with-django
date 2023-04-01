@@ -1,14 +1,12 @@
 {
-        "builds": [
-          {
-            "src": "e_voting/wsgi.py",
-            "use": "@vercel/python"
-          }
-        ],
-        "routes": [
-          {
-            "src": "/(.*)",
-            "dest": "e_voting/wsgi.py"
-          }
-        ]
+    "builds": [{
+        "src": "e_voting/wsgi.py",
+        "use": "@ardnt/vercel-python-wsgi",
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "e_voting/wsgi.py"
+        }
+    ]
 }
